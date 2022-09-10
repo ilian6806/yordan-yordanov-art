@@ -857,3 +857,29 @@ footer * + .copyright {
   font-weight: normal;
   z-index: 10000;
 }
+
+.awards-row {
+  margin-top: 20px;
+  padding: 25px 0;
+  background-image: url("../images/bgr-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.box-award-title {
+  font-size: 28px;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.box-award-place {
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  article img.box-award-image {
+    width: 80%;
+  }
+}
