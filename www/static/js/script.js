@@ -69,16 +69,6 @@ include('js/jquery.easing.1.3.js');
     }
 })(jQuery);
 
-/* Copyright Year
- ========================================================*/
-;
-(function ($) {
-    var currentYear = (new Date).getFullYear();
-    $(document).ready(function () {
-        $("#copyright-year").text((new Date).getFullYear());
-    });
-})(jQuery);
-
 /* Superfish menus
  ========================================================*/
 ;
