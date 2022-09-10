@@ -1,0 +1,25 @@
+{
+    "name": "yordan-yordanov-art",
+    "version": "1.0.0",
+    "description": "Website for wood artist",
+    "scripts": {
+        "build": "rm -rf i18n && static-i18n -l -i bg -i en www && cp i18n/en/* i18n/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ilian6806/yordan-yordanov-art.git"
+    },
+    "keywords": [
+        "Yordan Yordanov",
+        "wood carving",
+        "wood work"
+    ],
+    "author": "Ilian Iliev",
+    "bugs": {
+        "url": "https://github.com/ilian6806/yordan-yordanov-art/issues"
+    },
+    "homepage": "https://github.com/ilian6806/yordan-yordanov-art#readme",
+    "dependencies": {
+        "static-i18n": "^0.2.10"
+    }
+}
