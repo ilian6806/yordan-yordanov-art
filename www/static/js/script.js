@@ -5,7 +5,7 @@ function include(scriptUrl) {
 function isIE() {
     var myNav = navigator.userAgent.toLowerCase();
     return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
-};
+}
 
 /* cookie.JS
  ========================================================*/
@@ -79,7 +79,6 @@ include('js/jquery.easing.1.3.js');
     });
 })(jQuery);
 
-
 /* Superfish menus
  ========================================================*/
 ;
@@ -93,28 +92,6 @@ include('js/jquery.easing.1.3.js');
 (function ($) {
     include('js/jquery.rd-navbar.js');
 })(jQuery);
-
-
-
-
-/* Google Map
- ========================================================*/
-;
-(function ($) {
-    var o = document.getElementById("google-map");
-    if (o) {
-        include('//maps.google.com/maps/api/js?sensor=false');
-        include('js/jquery.rd-google-map.js');
-
-        $(document).ready(function () {
-            var o = $('#google-map');
-            if (o.length > 0) {
-                o.googleMap();
-            }
-        });
-    }
-})
-(jQuery);
 
 /* WOW
  ========================================================*/
@@ -135,11 +112,11 @@ include('js/jquery.easing.1.3.js');
 
 /* Mailform
  =============================================*/
-;
-(function ($) {
-    include('js/mailform/jquery.form.min.js');
-    include('js/mailform/jquery.rd-mailform.min.js');
-})(jQuery);
+// ;
+// (function ($) {
+//     include('js/mailform/jquery.form.min.js');
+//     include('js/mailform/jquery.rd-mailform.min.js');
+// })(jQuery);
 
 /* Orientation tablet fix
  ========================================================*/
@@ -203,7 +180,7 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
 
         $(document).ready(function () {
             o.camera({
-                autoAdvance: true,
+                autoAdvance: false,
                 height: '48.828125%',
                 minHeight: '350px',
                 pagination: false,
@@ -211,7 +188,7 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
                 playPause: false,
                 hover: false,
                 loader: 'none',
-                navigation: true,
+                navigation: false,
                 navigationHover: false,
                 mobileNavHover: false,
                 fx: 'simpleFade'

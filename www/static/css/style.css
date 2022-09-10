@@ -842,3 +842,18 @@ footer * + .copyright {
     left: 15px;
   }
 }
+
+/*========================================================
+                     Custom  Styles
+=========================================================*/
+
+.change-language {
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  z-index: 10000;
+}

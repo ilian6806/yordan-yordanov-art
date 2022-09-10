@@ -1,3 +1,11 @@
 {
-    "name": "Yordan Yordanov"
+    "name": "Yordan Yordanov",
+    "subtitle": "Wood sculptor",
+    "titles": {
+        "home": "Home",
+        "about": "About me",
+        "works": "My works",
+        "articles": "Articles",
+        "contacts": "Contacts"
+    }
 }
