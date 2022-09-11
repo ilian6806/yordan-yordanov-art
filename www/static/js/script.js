@@ -15,6 +15,10 @@ include('js/jquery.cookie.js');
  ========================================================*/
 include('js/jquery.easing.1.3.js');
 
+/* Toastr
+ ========================================================*/
+include('js/toastr.min.js');
+
 /* PointerEvents
  ========================================================*/
 ;
@@ -107,6 +111,30 @@ include('js/jquery.easing.1.3.js');
     include('js/mailform/jquery.form.min.js');
     include('js/mailform/jquery.rd-mailform.min.js');
 })(jQuery);
+
+$(function () {
+
+    $('#contact-form').submit(function(e) {
+
+        e.preventDefault();
+
+        let $form = $(this);
+
+        var showSuccess = function () {
+            toastr.success('I will contact you as soon as possible!');
+            $form.clearForm();
+        };
+
+        $.ajax({
+            type: 'POST',
+            url: $form.attr('action'),
+            data: $form.formSerialize(),
+            error: showSuccess
+        }).done(showSuccess);
+
+        return false;
+    });
+});
 
 /* Orientation tablet fix
  ========================================================*/

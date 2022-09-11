@@ -57,5 +57,11 @@
         "21": "National exhibition of the wood carving section. Gabrovo, Bulgaria - June 2019",
         "22": "Exhibition \"Drawing\" in the \"Art alley\" gallery. Sofia, Bulgaria - December 2019",
         "23": "Exhibition \"Wood carving, Myth and Legend\" at Shipka 6 Gallery. Sofia, Bulgaria - July 2022"
+    },
+    "contact": {
+        "text": "You can contact me, using the form below.",
+        "send": "Send",
+        "clear": "Clear",
+        "address": "1000 Sofia, Bulgaria"
     }
 }
