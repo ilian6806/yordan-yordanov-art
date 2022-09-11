@@ -102,11 +102,11 @@ include('js/jquery.easing.1.3.js');
 
 /* Mailform
  =============================================*/
-// ;
-// (function ($) {
-//     include('js/mailform/jquery.form.min.js');
-//     include('js/mailform/jquery.rd-mailform.min.js');
-// })(jQuery);
+;
+(function ($) {
+    include('js/mailform/jquery.form.min.js');
+    include('js/mailform/jquery.rd-mailform.min.js');
+})(jQuery);
 
 /* Orientation tablet fix
  ========================================================*/

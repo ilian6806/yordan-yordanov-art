@@ -7,7 +7,7 @@
 =========================================================*/
 body {
   color: #9c9b9b;
-  font: 400 15px/25px "PT Sans Narrow", sans-serif;
+  font: 400 18px/25px "PT Sans Narrow", sans-serif;
   -webkit-text-size-adjust: none;
 }
 
@@ -50,7 +50,7 @@ h5 {
 
 h6, .terms-list dt {
   font-size: 20px;
-  line-height: 32px;
+  line-height: 28px;
   font-weight: 400;
 }
 h6 a:hover, .terms-list dt a:hover {
@@ -70,7 +70,7 @@ article .wr:before {
   position: absolute;
   top: 5px;
   left: 0;
-  height: 250px;
+  height: 90%;
   width: 1px;
   background: #dadada;
 }
@@ -81,9 +81,7 @@ article .col-md-8.col-sm-8.col-xs-12 {
 article .wr_mod1 {
   margin-top: 7px;
 }
-article p {
-  font-size: 18px;
-}
+
 @media (max-width: 991px) {
   article .wr {
     padding-bottom: 0;
@@ -897,4 +895,10 @@ footer * + .copyright {
   article img.box-award-image {
     width: 80%;
   }
+}
+
+.exhibitions-list {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-top: 25px;
 }

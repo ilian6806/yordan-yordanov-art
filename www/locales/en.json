@@ -12,9 +12,13 @@
         "works": "My works",
         "awards": "Awards",
         "articles": "Articles",
+        "exhibitions": "Exhibitions",
         "contacts": "Contacts"
     },
-    "about": "My name is Yordan Panayotov Yordanov and I was born in Straldzha, Bulgaria in 1962. I teach \"Technology\" in the special \"Carving\" at the National Art Academy in Sofia, Bulgaria. Since 1996 I am a member of the \"Union of Bulgarian Artists\" section \"Carving\" I finished my higher education in 1996 at the National Academy of Arts in Sofia, Bulgaria specialization \"Carving\" under Prof. V.Lilov, and my secondary education in Secondary Special Art School in Kotel, Bulgaria special \"Carving\" in 1981.<br/><br/>Wood sculpture is my specialty and passion. I have a large number of participations in numerous exhibitions both in Bulgaria and in countries such as Belgium and France.",
+    "about": {
+        "title": "My name is Yordan Panayotov Yordanov. Wood sculpture is my specialty and my passion.",
+        "text": "I was born in Straldzha, Bulgaria in 1962.\nI finished my secondary education in Secondary Special Art School \"Georgi Stoikov Rakovski\" in Kotel, Bulgaria specialty \"Carving\" in 1981 and my higher education in 1996 at the National Academy of Arts in Sofia, Bulgaria specialization \"Carving\" under associate professor V. Lilov.<br/>I teach \"Technology\" in the special \"Carving\" at the National Art Academy in Sofia, Bulgaria. Since 1996 I am a member of the \"Union of Bulgarian Artists\" section \"Carving\".<br/>I have a large number of participations in numerous exhibitions both in Bulgaria and in countries such as Belgium and France."
+    },
     "awards": {
         "2004": {
             "title": "Cite des Arts",
@@ -28,5 +32,30 @@
             "title": "National Wood Sculpture Symposium",
             "place": "Byala, Bulgaria"
         }
+    },
+    "exhibitions": {
+        "1": "Exhibitions at Shipka Gallery 6. Sofia, Bulgaria - participation in all section exhibitions - 1996-2011",
+        "2": "Exhibition in \"Art alley\" gallery. Sofia, Bulgaria - 2004",
+        "3": "\"Cite des Arts\" competition exhibition. Paris, France - 2004",
+        "4": "Exhibition in the \"Cite des Arts\" gallery. Paris, France, May-June 2005",
+        "5": "Exhibition in \"La Louviere\" gallery. Belgium - June 2006",
+        "6": "Exhibition in \"Braine-l`Alleud\" gallery. Belgium - February 2008",
+        "7": "Exhibition in \"BEUKENOE-KLUISBERGEN\" gallery. Belgium - May-September 2008",
+        "8": "Exhibition in the ROTARY CLUB DE CHARLEROI-SUD gallery. Belgium - June 2008",
+        "9": "Exhibition in Gent Gallery. Belgium - March 2009",
+        "10": "First national exebition workshop on woodwork. Byala, Bulgaria - May 2010",
+        "11": "Exhibition in \"Kazakov\" gallery. Tryavna, Bulgaria - May-June 2011",
+        "12": "Exhibition \"110 years of carving\" in the gallery \"Shipka\" 6. Sofia, Bulgaria - July 2011",
+        "13": "Seventh national exebition workshop on woodwork. Veliko Tarnovo, Bulgaria - August 2011",
+        "14": "Libr`art; city of Libramont. Belgium - September 2012",
+        "15": "Exhibition in \"Algara\" gallery. Sofia, Bulgaria - December 2012",
+        "16": "Exhibition \"THE CUBE\", collective exhibition with GROUP 9 in \"Art alley\" gallery. Sofia, Bulgaria - February 2013",
+        "17": "Exhibition in the Historical Museum - SVOBODATA.NET, collective exhibition with GROUP 9. Panagyurishte, Bulgaria - April - May 2013",
+        "18": "Exhibition at the Ethnographic Museum - SVOBODATA.NET, collective exhibition with GROUP 9. Sofia, Bulgaria - April - October 2013",
+        "19": "VII National Symposium on Wood Sculpture. Byala, Bulgaria - June 2015",
+        "20": "\"Woodworking\" forum. Exhibition of the Woodcarving section at the \"Union of Bulgarian Artists\". Tryavna, Bulgaria - May 2019",
+        "21": "National exhibition of the wood carving section. Gabrovo, Bulgaria - June 2019",
+        "22": "Exhibition \"Drawing\" in the \"Art alley\" gallery. Sofia, Bulgaria - December 2019",
+        "23": "Exhibition \"Wood carving, Myth and Legend\" at Shipka 6 Gallery. Sofia, Bulgaria - July 2022"
     }
 }
