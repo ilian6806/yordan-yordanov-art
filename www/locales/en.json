@@ -1,4 +1,9 @@
 {
+    "site": {
+        "description": "My name is Yordan Panayotov Yordanov and I teach \"Technology\" in the special \"Carving\" at the National Art Academy in Sofia, Bulgaria.",
+        "keywords": "Yordan, Yordanov, carving, sculptor, exhibition",
+        "author": "Yordan Yordanov"
+    },
     "name": "Yordan Yordanov",
     "subtitle": "Wood sculptor",
     "titles": {
