@@ -70,6 +70,7 @@
   resize: vertical;
   overflow: auto;
   height: 112px;
+  min-height: 120px;
 }
 @media (max-width: 1365px) {
   .mailform label {
