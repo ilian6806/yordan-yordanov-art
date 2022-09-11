@@ -3,40 +3,42 @@
 <head>
     <title>Yordanov Art</title>
 
-    <base href="../static/">
-
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
     <meta name="revisit-after" content="5 days">
     <meta name="description" data-attr-t content-t="site.description">
     <meta name="keywords" data-attr-t content-t="site.keywords">
     <meta name="author" data-attr-t content-t="site.author">
-    <script src="js/meta.js"></script>
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script>
+        const STATIC_PREFIX='../static/';
+    </script>
+    <script src="../static/js/meta.js"></script>
+
+    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
 
     <link rel="alternate" href="https://yordanov-art.com" hreflang="en-us" />
     <link rel="alternate" href="https://yordanov-art.com/en/" hreflang="en-us" />
     <link rel="alternate" href="https://yordanov-art.com/bg/" hreflang="bg-bg" />
 
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mailform.css"/>
-    <link rel="stylesheet" href="css/camera.css"/>
-    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="../static/css/grid.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/mailform.css"/>
+    <link rel="stylesheet" href="../static/css/camera.css"/>
+    <link rel="stylesheet" href="../static/css/jquery.fancybox.css"/>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/jquery-migrate-1.2.1.js"></script>
 
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
         <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+            <img src="../static/images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
                  alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
         </a>
     </div>
-    <script src="js/html5shiv.js"></script>
+    <script src="../static/js/html5shiv.js"></script>
     <![endif]-->
 
     <script src='js/device.min.js'></script>
@@ -49,13 +51,13 @@
     <header id="home">
         <div class="camera_container">
             <div class="brand">
-                <h1 class="brand_name">
+                <h1 class="brand_name text-shadow">
                     <a href="./" data-t="name">Yordan Yordanov</a>
                 </h1>
-                <p class="brand_slogan" data-t="subtitle">Wood sculptor</p>
+                <p class="brand_slogan text-shadow" data-t="subtitle">Wood sculptor</p>
             </div>
             <div id="camera" class="camera_wrap">
-                <div data-src="images/bgr-1.jpg"></div>
+                <div data-src="../static/images/bgr-1.jpg"></div>
             </div>
             <div class="change-language">
                 <a href="/en/">EN</a>&nbsp;|&nbsp;<a href="/bg/">BG</a>
@@ -97,7 +99,7 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-8 col-xs-12 ">
                         <div class="wr">
-                            <h6 data-t="about" style="text-align: justify">
+                            <h6 data-t="about" class="text-justify">
                                 My name is Yordan Panayotov Yordanov and I was born in Straldzha, Bulgaria in 1962.
                                 I teach "Technology" in the special "Carving" at the National Art Academy in Sofia, Bulgaria.
                                 Since 1996 I am a member of the "Union of Bulgarian Artists" section "Carving".
@@ -110,7 +112,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 center">
-                        <img src="images/dancho.jpg" class="img_add" alt=""/>
+                        <img src="../static/images/dancho.jpg" class="img_add" alt=""/>
                     </div>
                 </div>
             </div>
@@ -121,154 +123,155 @@
 
                 <div class="row off">
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/18.jpg" class="thumb" rel="images">
-                            <img src="images/art/18.jpg" alt=""/>
+                        <a href="../static/images/art/18.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/18.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/17.jpg" class="thumb" rel="images">
-                            <img src="images/art/17.jpg" alt=""/>
+                        <a href="../static/images/art/17.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/17.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/16.jpg" class="thumb" rel="images">
-                            <img src="images/art/16.jpg" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="row off">
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/1.jpg" class="thumb" rel="images">
-                            <img src="images/art/1.jpg" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/2.jpg" class="thumb" rel="images">
-                            <img src="images/art/2.jpg" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/3.jpg" class="thumb" rel="images">
-                            <img src="images/art/3.jpg" alt=""/>
+                        <a href="../static/images/art/16.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/16.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                 </div>
                 <div class="row off">
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/4.jpg" class="thumb" rel="images">
-                            <img src="images/art/4.jpg" alt=""/>
+                        <a href="../static/images/art/1.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/1.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/5.jpg" class="thumb" rel="images">
-                            <img src="images/art/5.jpg" alt=""/>
+                        <a href="../static/images/art/2.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/2.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/6.jpg" class="thumb" rel="images">
-                            <img src="images/art/6.jpg" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="row off">
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/7.jpg" class="thumb" rel="images">
-                            <img src="images/art/7.jpg" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/8.jpg" class="thumb" rel="images">
-                            <img src="images/art/8.jpg" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/9.jpg" class="thumb" rel="images">
-                            <img src="images/art/9.jpg" alt=""/>
+                        <a href="../static/images/art/3.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/3.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                 </div>
                 <div class="row off">
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/11.jpg" class="thumb" rel="images">
-                            <img src="images/art/11.jpg" alt=""/>
+                        <a href="../static/images/art/4.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/4.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/12.jpg" class="thumb" rel="images">
-                            <img src="images/art/12.jpg" alt=""/>
+                        <a href="../static/images/art/5.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/5.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/14.jpg" class="thumb" rel="images">
-                            <img src="images/art/14.jpg" alt=""/>
+                        <a href="../static/images/art/6.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/6.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                 </div>
                 <div class="row off">
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/13.jpg" class="thumb" rel="images">
-                            <img src="images/art/13.jpg" alt=""/>
+                        <a href="../static/images/art/7.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/7.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/10.jpg" class="thumb" rel="images">
-                            <img src="images/art/10.jpg" alt=""/>
+                        <a href="../static/images/art/8.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/8.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="images/art/15.jpg" class="thumb" rel="images">
-                            <img src="images/art/15.jpg" alt=""/>
+                        <a href="../static/images/art/9.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/9.jpg" alt=""/>
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row off">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="../static/images/art/11.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/11.jpg" alt=""/>
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="../static/images/art/12.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/12.jpg" alt=""/>
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="../static/images/art/14.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/14.jpg" alt=""/>
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row off">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="../static/images/art/13.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/13.jpg" alt=""/>
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="../static/images/art/10.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/10.jpg" alt=""/>
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="../static/images/art/15.jpg" class="thumb" rel="images">
+                            <img src="../static/images/art/15.jpg" alt=""/>
                             <span class="thumb_overlay"></span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <br />
-        <br />
-        <div class="container" id="awards">
-            <h2 data-t="titles.awards">Awards</h2>
-        </div>
-        <section class="awards-row">
+
+        <section id="awards" class="well">
             <div class="container">
-                <div class="row off">
-                    <div class="col-md-4 col-sm-4 col-xs-4 center">
-                        <article class="box-award">
-                            <img class="box-award-image" src="images/awards/2004.png" alt="">
-                            <h3 class="box-award-title" data-t="awards.2004.title">Cite des Arts</h3>
-                            <div class="box-award-place" data-t="awards.2004.place">Paris, France</div>
-                        </article>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 center">
-                        <article class="box-award">
-                            <img class="box-award-image" src="images/awards/2012.png" alt="">
-                            <h3 class="box-award-title" data-t="awards.2012.title">Libr`art</h3>
-                            <div class="box-award-place" data-t="awards.2012.place">Libramont, Belgium</div>
-                        </article>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 center">
-                        <article class="box-award">
-                            <img class="box-award-image" src="images/awards/2015.png" alt="">
-                            <h3 class="box-award-title" data-t="awards.2015.title">National Wood Sculpture Symposium</h3>
-                            <div class="box-award-place" data-t="awards.2015.place">Byala, Bulgaria</div>
-                        </article>
+                <h2 data-t="titles.awards">Awards</h2>
+            </div>
+            <div class="awards-row">
+                <div class="container">
+                    <div class="row off">
+                        <div class="col-md-4 col-sm-4 col-xs-4 center">
+                            <article class="box-award">
+                                <img class="box-award-image" src="../static/images/awards/2004.png" alt="">
+                                <h3 class="box-award-title text-shadow" data-t="awards.2004.title">Cite des Arts</h3>
+                                <div class="box-award-place text-shadow" data-t="awards.2004.place">Paris, France</div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 center">
+                            <article class="box-award">
+                                <img class="box-award-image" src="../static/images/awards/2012.png" alt="">
+                                <h3 class="box-award-title text-shadow" data-t="awards.2012.title">Libr`art</h3>
+                                <div class="box-award-place text-shadow" data-t="awards.2012.place">Libramont, Belgium</div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 center">
+                            <article class="box-award">
+                                <img class="box-award-image" src="../static/images/awards/2015.png" alt="">
+                                <h3 class="box-award-title text-shadow" data-t="awards.2015.title">National Wood Sculpture Symposium</h3>
+                                <div class="box-award-place text-shadow" data-t="awards.2015.place">Byala, Bulgaria</div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -279,7 +282,7 @@
 
                 <article class="row wow fadeInRight" data-wow-delay="0.1s">
                     <div class="col-md-4 col-sm-4 col-xs-12 center">
-                        <img src="images/page-1_img11.jpg" class="img_add2" alt=""/>
+                        <img src="../static/images/page-1_img11.jpg" class="img_add2" alt=""/>
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <div class="wr wr_mod1">
@@ -303,7 +306,7 @@
                 </article>
                 <article class="row wow fadeInRight" data-wow-delay="0.3s">
                     <div class="col-md-4 col-sm-4 col-xs-12 center">
-                        <img src="images/page-1_img12.jpg" class="img_add2" alt=""/>
+                        <img src="../static/images/page-1_img12.jpg" class="img_add2" alt=""/>
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <div class="wr ">
@@ -326,7 +329,7 @@
                 </article>
                 <article class="row wow fadeInRight" data-wow-delay="0.5s">
                     <div class="col-md-4 col-sm-4 col-xs-12 center">
-                        <img src="images/page-1_img13.jpg" class="img_add2" alt=""/>
+                        <img src="../static/images/page-1_img13.jpg" class="img_add2" alt=""/>
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <div class="wr">
@@ -415,7 +418,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../static/js/script.js"></script>
 </div>
 </body>
 </html>
