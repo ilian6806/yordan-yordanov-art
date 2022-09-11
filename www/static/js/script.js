@@ -191,6 +191,7 @@ $(function () {
         $(document).ready(function () {
             o.camera({
                 autoAdvance: false,
+                mobileAutoAdvance: false,
                 height: '48.828125%',
                 minHeight: '350px',
                 pagination: false,

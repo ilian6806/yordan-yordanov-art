@@ -51,8 +51,9 @@ h5 {
 h6, .terms-list dt {
   font-size: 20px;
   line-height: 28px;
-  font-weight: 400;
+  font-weight: bold;
 }
+
 h6 a:hover, .terms-list dt a:hover {
   color: #000;
 }
@@ -634,9 +635,9 @@ address a:hover, .link a:hover {
   position: fixed;
   width: 200px;
 }
-.rd-mobilepanel .active {
-  left: 110px;
-}
+/*.rd-mobilepanel .active {*/
+/*  left: 110px;*/
+/*}*/
 .rd-mobilepanel .active:before {
   left: 30px;
   content: '\f00d';
@@ -885,6 +886,20 @@ p {
   background: transparent;
 }
 
+.rd-mobilemenu_ul {
+  scrollbar-color: rgba(0, 0, 0, 0) transparent;
+  scrollbar-width: thin;
+}
+.rd-mobilemenu_ul::-webkit-scrollbar {
+  width: 0;
+}
+.rd-mobilemenu_ul::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+}
+.rd-mobilemenu_ul::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0);
+}
+
 /*========================================================
                      Common  Styles
 =========================================================*/
@@ -934,7 +949,7 @@ p {
 
 @media (max-width: 991px) {
   article img.box-award-image {
-    width: 80%;
+    width: 55%;
   }
 }
 
@@ -942,4 +957,13 @@ p {
   list-style-type: square;
   padding-left: 20px;
   margin-top: 25px;
+}
+
+.quote {
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 10px;
 }

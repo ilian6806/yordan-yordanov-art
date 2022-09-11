@@ -33,6 +33,24 @@
             "place": "Byala, Bulgaria"
         }
     },
+    "articles": {
+        "1": {
+            "title": "The VII National Symposium on Wood Sculpture begins in Byala",
+            "text": "\"The author's concepts are in the direction of stylized sculptures with an animal character and abstract compositions inspired by the motto of exhibition.\" <span class=\"quote\">--- Translated from Bulgarian</span>"
+        },
+        "2": {
+            "title": "A national exhibition of the Woodcarving section is visiting Gabrovo",
+            "text": "\"According to art critics, and in practice, wood art today has a new form and content, and a vision that is up-to-date with world trends.\" <span class=\"quote\">--- Translated from Bulgarian</span>"
+        },
+        "3": {
+            "title": "Forum woodwork",
+            "text": "\"Interior woodwork is a rare art form and through this traveling exhibition, the public will be exposed to its plastic characteristics, means of expression, inner life and world of ideas.\" <span class=\"quote\">--- Translated from Bulgarian</span>"
+        },
+        "4": {
+            "title": "The wood carving, Myth and Legend",
+            "text": "\"Dancho's (Yordan Yordanov) modular sculptures, rendered in an instantly recognizable style that brings to the surface the internal tensions in a given structure, compose cosmogonic narratives of creation.\" <span class=\"quote\">--- Translated from Bulgarian</span>"
+        }
+    },
     "exhibitions": {
         "1": "Exhibitions at Shipka Gallery 6. Sofia, Bulgaria - participation in all section exhibitions - 1996-2011",
         "2": "Exhibition in \"Art alley\" gallery. Sofia, Bulgaria - 2004",
@@ -62,6 +80,10 @@
         "text": "You can contact me, using the form below.",
         "send": "Send",
         "clear": "Clear",
-        "address": "1000 Sofia, Bulgaria"
+        "address_label": "Address:",
+        "address": "1000 Sofia, Bulgaria",
+        "name": "Name",
+        "subject": "Subject:",
+        "message": "Message"
     }
 }
