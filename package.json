@@ -3,11 +3,7 @@
     "version": "1.0.0",
     "description": "Website for wood artist",
     "scripts": {
-        "clean": "echo Deleting the old build... && rm -rf i18n",
-        "translate": "echo Starting the new build... && static-i18n --fix-paths false --locales-path www/locales/ -l -i bg -i en www/default",
-        "copyStatic": "echo Copying static files... && cp -r www/static/ i18n/",
-        "compileDefault": "echo Copmiling default... && cp i18n/en/* i18n/ && sed -i 's/..\\/static\\//static\\//g' i18n/index.html",
-        "build": "npm run -s clean && npm run -s translate && npm run -s copyStatic && npm run -s compileDefault && sh ./shells/update_versions.sh && echo Done."
+        "build": "sh ./shells/build.sh"
     },
     "repository": {
         "type": "git",
