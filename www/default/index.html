@@ -11,9 +11,6 @@
     <meta name="author" data-attr-t content-t="site.author">
     <meta name="robots" content="noindex,nofollow">
 
-    <script>
-        const STATIC_PREFIX='../static/';
-    </script>
     <script src="../static/js/meta.js"></script>
 
     <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
@@ -22,14 +19,17 @@
     <link rel="alternate" href="https://yordanov-art.com/en/" hreflang="en-us" />
     <link rel="alternate" href="https://yordanov-art.com/bg/" hreflang="bg-bg" />
 
-    <link rel="stylesheet" href="../static/css/grid.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/mailform.css"/>
-    <link rel="stylesheet" href="../static/css/camera.css"/>
+    <link rel="stylesheet" href="../static/css/grid.css?v=1">
+    <link rel="stylesheet" href="../static/css/style.css?v=1">
+    <link rel="stylesheet" href="../static/css/mailform.css?v=1"/>
+    <link rel="stylesheet" href="../static/css/camera.css?v=1"/>
     <link rel="stylesheet" href="../static/css/toastr.min.css"/>
     <link rel="stylesheet" href="../static/css/jquery.fancybox.css"/>
 
     <script src="../static/js/jquery.js"></script>
+    <script>
+        jQuery.migrateMute = true;
+    </script>
     <script src="../static/js/jquery-migrate-1.2.1.js"></script>
 
     <!--[if lt IE 9]>
@@ -61,7 +61,7 @@
             <div id="camera" class="camera_wrap">
                 <div data-src="../static/images/bgr-1.jpg"></div>
             </div>
-            <div class="change-language">
+            <div class="change-language text-shadow">
                 <a href="/en/">EN</a>&nbsp;|&nbsp;<a href="/bg/">BG</a>
             </div>
         </div>
@@ -447,7 +447,12 @@
         </div>
     </footer>
 
-    <script src="../static/js/script.js"></script>
+    <script>
+        function include(scriptUrl) {
+            document.write('<script src="../static/' + scriptUrl + '?v=1"><\/script>');
+        }
+    </script>
+    <script src="../static/js/script.js?v=1"></script>
 </div>
 </body>
 </html>

@@ -1,6 +1,3 @@
-function include(scriptUrl) {
-    document.write('<script src="' + STATIC_PREFIX + scriptUrl + '"></script>');
-}
 
 function isIE() {
     var myNav = navigator.userAgent.toLowerCase();
