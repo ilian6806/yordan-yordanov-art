@@ -200,7 +200,7 @@ $(function () {
                 navigationHover: false,
                 mobileNavHover: false,
                 fx: 'simpleFade'
-            })
+            });
         });
     }
 })(jQuery);

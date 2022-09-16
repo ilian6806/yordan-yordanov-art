@@ -135,44 +135,43 @@
                 type = 'click';
             }
 
-            $('body').delegate('.' + settings.toggleClass, type, function () {
+            $body.delegate('.' + settings.toggleClass, type, function () {
                 var o = $('.' + settings.cntClass);
                 $(this).toggleClass('active');
 
                 if (o.hasClass('active')) {
                     $(this).removeClass('active');
                     o.removeClass('active');
-                    $('body').undelegate('*', 'mousewheel', nav.scroll);
-                    $('body').undelegate('*', 'touchmove', nav.scroll);
-                    $('body').undelegate('*', 'touchend', nav.touchend);
-                    $('body').undelegate('*', 'touchstart', nav.close);
-                    $('body').undelegate('*:not(.' + settings.toggleClass + ' span)', 'click', nav.close);
+                    $body.undelegate('*', 'mousewheel', nav.scroll);
+                    $body.undelegate('*', 'touchmove', nav.scroll);
+                    $body.undelegate('*', 'touchend', nav.touchend);
+                    $body.undelegate('*', 'touchstart', nav.close);
+                    $body.undelegate('*:not(.' + settings.toggleClass + ' span)', 'click', nav.close);
                 } else {
                     $(this).addClass('active');
                     o.addClass('active');
-                    $('body').delegate('*', 'mousewheel', nav.scroll);
-                    $('body').delegate('*', 'touchmove', nav.scroll);
-                    $('body').delegate('*', 'touchend', nav.touchend);
-                    $('body').delegate('*', 'touchstart', {type: type}, nav.close);
-                    $('body').delegate('*:not(.' + settings.toggleClass + ' span)', 'click', {type: type}, nav.close);
+                    $body.delegate('*', 'mousewheel', nav.scroll);
+                    $body.delegate('*', 'touchmove', nav.scroll);
+                    $body.delegate('*', 'touchend', nav.touchend);
+                    $body.delegate('*', 'touchstart', {type: type}, nav.close);
+                    $body.delegate('*:not(.' + settings.toggleClass + ' span)', 'click', {type: type}, nav.close);
                 }
             });
         },
 
         createResizeListener: function () {
             var nav = this;
-
             $(window).on('resize', function () {
                 var o = $('.' + settings.cntClass);
 
                 if (o.css('display') == 'none') {
                     o.removeClass('active');
                     $('.' + settings.toggleClass).removeClass('active');
-                    $('body').undelegate('*', 'mousewheel', nav.scroll);
-                    $('body').undelegate('*', 'touchmove', nav.scroll);
-                    $('body').undelegate('*', 'touchend', nav.touchend);
-                    $('body').undelegate('*', 'touchstart', nav.close);
-                    $('body').undelegate('*:not(.' + settings.toggleClass + ' span)', 'click', nav.close);
+                    $body.undelegate('*', 'mousewheel', nav.scroll);
+                    $body.undelegate('*', 'touchmove', nav.scroll);
+                    $body.undelegate('*', 'touchend', nav.touchend);
+                    $body.undelegate('*', 'touchstart', nav.close);
+                    $body.undelegate('*:not(.' + settings.toggleClass + ' span)', 'click', nav.close);
                 }
             });
         },
@@ -217,6 +216,7 @@
         },
 
         close: function (e) {
+
             if (!e.originalEvent) {
                 return;
             }
@@ -236,6 +236,14 @@
             }
         },
 
+        manualToggle: function () {
+            if (this.isMobile()) {
+                var event = jQuery.Event('touchstart');
+                event.target = $body.find('.rd-mobilepanel_toggle')[0];
+                $body.trigger(event);
+            }
+        },
+
         isMobile: function () {
             return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         }
@@ -252,11 +260,17 @@
     window.RDMobilemenu_autoinit = function (selector) {
         var o = $(selector);
         if (o.length) {
-            new RDMobileMenu(o[0]).init();
+            var menu = new RDMobileMenu(o[0]);
+            menu.init();
+            $('.' + settings.menuClass + ' a').on('click', function () {
+                menu.manualToggle();
+            });
+            return menu
         }
     };
 })(jQuery);
 
 $(document).ready(function () {
+    $body = $('body');
     RDMobilemenu_autoinit('[data-type="navbar"]');
 });
