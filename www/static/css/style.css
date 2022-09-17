@@ -430,7 +430,7 @@ address a:hover, .link a:hover {
   left: 0;
   bottom: -56px;
   width: 200px;
-  padding: 136px 30px;
+  padding: 110px 30px;
   color: #9c9b9b;
   background: #282828;
   overflow: auto;
@@ -493,7 +493,7 @@ address a:hover, .link a:hover {
     -webkit-transform: translateX(-51px);
     transform: translateX(-51px);
     width: 250px;
-    padding: 136px 70px;
+    padding: 110px 70px;
   }
 }
 .rd-mobilemenu_ul .rd-mobilemenu_submenu {
