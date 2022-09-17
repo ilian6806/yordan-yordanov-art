@@ -187,8 +187,8 @@ $(function () {
 
         $(document).ready(function () {
             o.camera({
-                autoAdvance: false,
-                mobileAutoAdvance: false,
+                autoAdvance: true,
+                mobileAutoAdvance: true,
                 height: '48.828125%',
                 minHeight: '350px',
                 pagination: false,
@@ -199,7 +199,11 @@ $(function () {
                 navigation: false,
                 navigationHover: false,
                 mobileNavHover: false,
-                fx: 'simpleFade'
+                pauseOnClick: false,
+                fx: 'simpleFade',
+                slideOn: 'next', //next, prev, random: decide if the transition effect will be applied to the current (prev) or the next slide
+                time: 1000,	//milliseconds between the end of the sliding effect and the start of the nex one
+                transPeriod: 4000 // transition duration
             });
         });
     }
@@ -218,6 +222,16 @@ $(function () {
             o.fancybox();
         });
     }
+})(jQuery);
+
+/* Copyright Year
+ ========================================================*/
+;
+(function ($) {
+    var currentYear = (new Date).getFullYear();
+    $(document).ready(function () {
+        $("#copyright-year").text((new Date).getFullYear());
+    });
 })(jQuery);
 
 /* Scroll To

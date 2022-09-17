@@ -808,7 +808,7 @@ main {
 =========================================================*/
 footer {
   padding-top: 50px;
-  padding-bottom: 125px;
+  padding-bottom: 25px;
 }
 footer .col-md-8.ol-sm-8.col-xs-8 {
   clear: both;
@@ -822,6 +822,12 @@ footer .copyright a:hover {
 }
 footer * + .copyright {
   margin-top: 68px;
+}
+footer .icon-container {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  margin-right: 7px;
 }
 
 .footer__ins1 {
@@ -949,7 +955,14 @@ p {
 
 @media (max-width: 991px) {
   article img.box-award-image {
-    width: 55%;
+    width: 30%;
+  }
+  article .box-award-title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  article .box-award-place {
+    font-size: 16px;
   }
 }
 
