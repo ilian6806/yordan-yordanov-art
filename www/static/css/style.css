@@ -843,12 +843,6 @@ footer .icon-container {
   footer {
     position: relative;
   }
-  footer .copyright {
-    margin: 0;
-    position: absolute;
-    bottom: 50px;
-    left: 15px;
-  }
 }
 
 
