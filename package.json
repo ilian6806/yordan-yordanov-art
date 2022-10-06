@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "Website for wood artist",
     "scripts": {
-        "build": "sh ./shells/build.sh"
+        "build": "sh ./shells/build.sh",
+        "deploy": "npx firebase-tools deploy --only hosting --project yordan-yordanov-art"
     },
     "repository": {
         "type": "git",
